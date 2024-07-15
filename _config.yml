@@ -1,0 +1,44 @@
+# Site settings
+title: Prabin Sigdel
+description: 'Cyber Security researcher | Security Analyst at Cryptogen Nepal'
+url: 'https://prabinsigdel.com.np'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
+
+author:
+  name: 'Prabin Sigdel'
+  email: 0xpr4bin00@gmail.com
+  twitter_username: 0xpr4bin
+  facebook_username: 0xpr4bin
+  github_username:  0xpr4bin
+  linkedin_username:  0xpr4bin
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
